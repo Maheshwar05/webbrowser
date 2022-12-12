@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: antiquewhite;
+        
+    
+}
+header{
+   background-color: yellow; 
+    height: 12vh;
+    display: flex;
+}
+.logo img{
+    height: 70%;
+    margin-top:8%;
+    margin-left: 10%;
+}
+.name{
+    color: black;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    margin-top: 1.5%;
+    margin-left: 30%;
+}
+.home img{
+    width: 100%;
+    height: 80%;
+    opacity: 1.5;
+}
+.home .a{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: black;
+    font-size: 150%;
+}
+.a .b{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#check{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.navlinks{
+    background-color: yellowgreen;
+    height: 12vh;
+}
+.navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    margin-top: -5px;
+}
+a{
+    color: black;
+}
+.aboutus{
+    display: flex;
+}
+.aboutus img{
+    height: 50vh;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.aboutus .about{
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 150%;
+}
+.about h2{
+    color: rgb(7,61,7);
+}
+.about p{
+    color: green;
+    margin-top: 2%;
+}
+.about button{
+    background: linear-gradient(yellow,greeen);
+    margin-top: 5vh;
+    height: 6vh;
+    width: 25%;
+}
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url("images/gallery\ 2.jpg");
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('images/gallery\ 1.jpg');
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('images/gallery\ 4.jpeg');
+    background-size: cover;
+  }
+  .item-4{
+    background: url('images/krct\ 5.png');
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+  }  
+
+        
+
+.uga{
+    margin: 15vh;
+    border-radius: 12%;
+}
+.uga h1{
+    text-align: center;
+    font-size: 175%;
+    color: rgb(23, 65, 23);
+}
+.uga .ug img{
+    height: 20vh;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+.uga .ug{
+    border: 0.6px solid rgb(138, 132, 132);
+    margin-left: 50px;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: azure;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 15vh;
+    width: 250px;
+}
+.uga .row1{
+    display: flex;
+}
+.uga .row2{
+    display: flex;
+}
+.ug h2{
+    margin-top: 25px;
+}
+hr{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.admission{
+    text-align: center;
+}
+.admission h1{
+    margin-top: 30px;
+}
+.admission h3{
+    margin-top: 20px;
+}
+.admission p{
+    background-color: rgb(0,255,64);
+    height: 10vh;
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 1.4%;
+    box-shadow: 1px 2px 1px gray;
+    font-size: 100%;
+}
+form{
+    margin-top: 15vh;
+    margin-left: 10%;
+    background: linear-gradient(greenyellow,yellow);
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+input{
+    padding-top:9px ;
+    padding-bottom: 9px ;
+    padding-right: 50px;
+}
+.dis{
+    display: flex;
+}
+.dis img{
+    height: 70vh;
+    margin-top: 150px;
+    margin-left: 200px;
+    opacity: 5;
+
+}
+.placement{
+    text-align: center;
+    margin-top: 30px;
+}
+.recruit{
+    display: flex;
+}
+.recruit img{
+    height: 10vh;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.contact{
+    margin-top: 5vh;
+    display: flex;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 160%;
+}
+.shopinfo2{
+    margin-left: 9%;
+}
+footer{
+    height: 30vh;
+    background-color: black;
+}
+footer h2{
+    color: white;
+   position: relative;
+   left: 50%;
+   top: 30px;
+   font-size: 120%;
+
+}
+footer h4{
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 40px;
+}
+footer p{
+    color: white;
+    position: relative;
+    left: 10%;
+    top: 5px;
+}
+@media only screen and (max-width:600px) {
+    *{
+        font-size: 13px;
+    }
+    .name h2{
+        font-size: 17px;
+    }
+    .home .a h2{
+        display: none;
+    }
+    .navlinks{
+        background-color: antiquewhite;
+    }
+    .menu{
+        display: block;
+        position: relative;
+    }
+    .navlinks ul{
+        display: block;
+        width: 50%;
+        height: 30vh;
+        background: #2c3e;
+        text-align: center;
+        transition: all 1s;
+        position: absolute;
+
+    }
+    .navlinks ul li{
+        padding-top: 5px;
+        padding-bottom: 3px;
+    }
+    .navlinks ul li:hover{
+        background-color: red;
+    }
+    #check:checked ~ ul{
+        margin-left: 0;
+        position: relative;
+    }
+    .about button{
+        background: linear-gradient(yellow,green);
+        margin-top: 5vh;
+        height: 6vh;
+        width: 53%;
+    }
+    .aboutus img{
+        border-radius: 50%;
+        height: 30vh;
+        margin-top: 25%;
+        margin-left: 30%;
+    }
+    .aboutus .about{
+        margin-top: 60%;
+        margin-left: -40%;
+    }
+    
+    .uga .row2{
+        display: block;
+        margin-left: 10%;
+    }
+    .uga .row1{
+        display: block;
+        margin-left: 10%;
+    }
+    .dis{
+        display: block;
+    }
+    form{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .dis img{
+        margin-left: 150px;
+        height: 50vh;
+    }
+    footer{
+        height: 15vh;
+        background-color: black;
+    }
+    footer p{
+        left: 4%;
+        font-size: 80%;
+    }
+    footer h2{
+        left: 50%;
+        font-size: 50%;
+    }
+    footer h4{
+        left: 50%;
+        font-size: 70%;
+    }
+    .carousel-wrapper {
+        height: 300px;
+        position: relative;
+        width: 500px;
+        display: block;
+        margin: 50px auto ;
+        border: 2px solid black;
+      }
+    @media only screen and (max-width:480px){
+        .about button{
+            background: linear-gradient(yellow,green);
+            margin-top: 5vh;
+            height: 6vh;
+            width: 53%;
+        }
+        .aboutus img{
+            border-radius: 50%;
+            height: 30vh;
+            margin-top: 25%;
+            margin-left: 30%;
+        }
+        .aboutus .about{
+            margin-top: 60%;
+            margin-left: -50%;
+        }
+        form{
+            width: 85%;
+            margin-left: 3%;
+            
+
+        }
+        .dis img{
+            margin-left: 50px;
+            height: 50vh;
+            margin-top: 30px;
+        }
+        footer {
+            width: 570px;
+        }
+        .menu{
+            display: block;
+            position: relative;
+        }
+    
+        .navlinks ul{
+            display: block;
+            width: 50%;
+            height: 30vh;
+            background: #2c3e;
+            text-align: center;
+            transition: all 1s;
+            position: absolute;
+            
+    
+        }
+        .navlinks ul li{
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        #check:checked ~ ul{
+            margin-left: 0;
+            position: relative;
+        }
+        
+        carousel-wrapper {
+            height: 200px;
+            position: relative;
+            width: 400px;
+            display: block;
+            margin: 50px auto ;
+            border: 2px solid black;
+            left: 10%;
+          }
+         .uga .row1{
+            display: block;
+            margin-left: 8%;
+         }
+         .uga .row2{
+            display: block;
+            margin-left: 8%;
+         }
+        
+        
+    
+    @media only screen and (max-width:320px) {
+        .menu{
+            display: block;
+            position: relative;
+        }
+    
+        .navlinks ul{
+            display: block;
+            width: 50%;
+            height: 30vh;
+            background: #2c3e;
+            text-align: center;
+            transition: all 1s;
+            position: absolute;
+            
+    
+        }
+        .navlinks ul li{
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        #check:checked ~ ul{
+            margin-left: 0;
+            position: relative;
+        }
+        .about button{
+            background: linear-gradient(yellow,green);
+            margin-top: 5vh;
+            height: 6vh;
+            width: 53%;
+        }
+        .aboutus img{
+            border-radius: 50%;
+            height: 30vh;
+            margin-top: 25%;
+            margin-left: 4%;
+        }
+        .aboutus .about{
+            margin-top: 80%;
+            margin-left: -60%;
+        }
+        .uga h1{
+            text-align: center;
+            font-size: 90%;
+        }
+        .uga .ug{
+            border: 0.6px solid rgb(138, 132, 132);
+            margin-left: -40px;
+            height: 40vh;
+            border-radius: 10px;
+            background-color: azure;
+            margin-right: -50px;
+            text-align: center;
+            margin-top: 15vh;
+            width: 250px;
+        }
+        footer{
+            height: 20vh;
+            width: 100%;
+        }
+        footer p{
+            font-size: 50%;
+        }
+        footer h2{
+            font-size: 40%;
+            margin-top: .25px;
+        }
+        footer h4{
+            font-size: 40%;
+        }
+        carousel-wrapper {
+            height: 2px;
+            position: relative;
+            width: 3px;
+            display: block;
+            margin: 50px auto ;
+            border: 2px solid black;
+            
+          }
+        
+    
+            
+        }
+    
